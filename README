@@ -48,4 +48,7 @@ To build xv6 on an x86 ELF machine (like Linux or FreeBSD), run
 will need to install a cross-compiler gcc suite capable of producing
 x86 ELF binaries (see https://pdos.csail.mit.edu/6.828/).
 Then run "make TOOLPREFIX=i386-jos-elf-". Now install the QEMU PC
-simulator and run "make qemu".
+simulator and run "make qemu". 
+
+# BUILDING AND RUNNING XV6 at MacOS/m3 chips
+Install xcode. Then, install "brew instal i686-elf-gcc qemu"; after that, run "make TOOLPREFIX=i686-elf-". And run "make qemu".
